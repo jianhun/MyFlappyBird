@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "GameScene::createSprite(std::string const&amp;):GameScene.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "pos[2]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "GameScene::setStatus(int):GameScene.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "pipesArray-&gt;count()">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "Utils::buttonHitTest(cocos2d::CCPoint const&amp;, cocos2d::CCArray*):Utils.cpp">
+      </ContextState>
+      <ContextState
+         contextName = "cocos2d::CCNode::addChild(cocos2d::CCNode*, int, int):CCNode.cpp">
+      </ContextState>
+      <ContextState
+         contextName = "GameScene::birdFall() [inlined]:GameScene.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "land-&gt;getContentSize()">
+            </PersistentString>
+            <PersistentString
+               value = "bird-&gt;getPositionY()">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "GameScene::ccTouchBegan(cocos2d::CCTouch*, cocos2d::CCEvent*):GameScene.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "pipesArray-&gt;count()">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "cocos2d::CCNode::getContentSize():CCNode.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "m_obContentSize">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "GameScene::init():GameScene.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "reStart-&gt;getParent()">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "GameScene::createAnimArray(std::string const&amp;, int):GameScene.cpp">
+      </ContextState>
+      <ContextState
+         contextName = "CompnButton::setContent(int, cocos2d::CCNode*):CompnButton.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "content-&gt;getContentSize()">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "AppDelegate::applicationDidFinishLaunching():AppDelegate.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "pEGLView-&gt;getScaleX()">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
