@@ -4,3 +4,4 @@ proj.android/gen
 proj.android/obj
 proj.android/assets
 proj.android/libs/armeabi
+proj.android/.project
