@@ -25,12 +25,18 @@ package com.Shao.Test;
 
 import java.util.Calendar;
 
-import net.youmi.android.AdManager;
-import net.youmi.android.dev.OnlineConfigCallBack;
-import net.youmi.android.spot.SpotManager;
+//有米插屏（带积分墙）
+//import net.youmi.android.AdManager;
+//import net.youmi.android.dev.OnlineConfigCallBack;
+//import net.youmi.android.spot.SpotManager;
 
 import org.cocos2dx.lib.Cocos2dxActivity;
 import org.cocos2dx.lib.Cocos2dxGLSurfaceView;
+
+//有米插屏（无积分墙）
+import com.rudiduad.Ggsibmdd123;
+import com.rudiduad.dv.Ggsiajdd123;
+import com.rudiduad.st.Ggsiaadd123;
 
 import android.os.Bundle;
 import android.util.Log;
@@ -99,10 +105,14 @@ public class testShao3 extends Cocos2dxActivity{
 		//飞沃插屏
 //		CoverAdComponent.init(this, feiwo_appKey);
 		
-		//有米插屏
-		AdManager.getInstance(this).init(youmi_appid,youmi_appkey, false);
-		SpotManager.getInstance(this).loadSpotAds();
-		SpotManager.getInstance(this).setSpotTimeout(3000);//3秒
+		//有米插屏（带积分墙）
+		//AdManager.getInstance(this).init(youmi_appid,youmi_appkey, false);
+		//SpotManager.getInstance(ownerContext).loadSpotAds();
+		//SpotManager.getInstance(ownerContext).setSpotTimeout(3000);//3秒
+		//有米插屏（无积分墙）
+		Ggsibmdd123.getInstance(this).init(youmi_appid, youmi_appkey, false);
+		Ggsiaadd123.ddrgeofw123(this).ddrgedfw123();
+		Ggsiaadd123.ddrgeofw123(this).ddrgdjfw123(3000);//3秒		
 		getYoumi();
 	}
     
@@ -121,23 +131,40 @@ public class testShao3 extends Cocos2dxActivity{
     //有米获取在线参数
     public static void getYoumi() {
     	int hour = Calendar.getInstance().get(Calendar.HOUR);
-    	Log.v("aaaaaaaahour", hour + "");
-    	Log.v("aaaaaaaahour", youmi_checkHour + "");
+
     	if (hour != youmi_checkHour) {
-    		AdManager.getInstance(ownerContext).asyncGetOnlineConfig("adsOpen", new OnlineConfigCallBack() {
+    		//带积分墙
+//    		AdManager.getInstance(ownerContext).asyncGetOnlineConfig("adsOpen", new OnlineConfigCallBack() {
+//    	        @Override
+//    	        public void onGetOnlineConfigSuccessful(String key, String value) {
+//    	        // TODO Auto-generated method stub
+//    	            //获取在线参数成功
+//
+//    	        	youmi_open = value;
+//    	        	Log.v("aaaaaaaGetState:", value);
+//    	        }       
+//    	        @Override
+//    	        public void onGetOnlineConfigFailed(String key) {
+//    	            // TODO Auto-generated method stub
+//    	            //获取在线参数失败，可能原因有：键值未设置或为空、网络异常、服务器异常
+//    	        	Log.v("aaaaaaaGetState:", "Fail");
+//    	        }
+//    	    });
+    		//无积分墙
+    		Ggsibmdd123.getInstance(ownerContext).ddrgczfw123("adsOpen", new Ggsiajdd123() {
     	        @Override
-    	        public void onGetOnlineConfigSuccessful(String key, String value) {
+    	        public void ddrgbcfw123(String key, String value) {
     	        // TODO Auto-generated method stub
     	            //获取在线参数成功
-    	        	Log.v("aaaaaaaakey",key);
-    	        	Log.v("aaaaaaaavalue", value);
+    	        	
     	        	youmi_open = value;
+    	        	Log.v("aaaaaaaGetState:", value);
     	        }       
     	        @Override
-    	        public void onGetOnlineConfigFailed(String key) {
+    	        public void ddrgbdfw123(String key) {
     	            // TODO Auto-generated method stub
     	            //获取在线参数失败，可能原因有：键值未设置或为空、网络异常、服务器异常
-    	        	Log.v("aaaaaaaafail",key);
+    	        	Log.v("aaaaaaaGetState:", "Fail");
     	        }
     	    });
     	}
@@ -148,10 +175,10 @@ public class testShao3 extends Cocos2dxActivity{
     	//飞沃插屏
 //    	CoverAdComponent.showAd(ownerContext);
     	//有米插屏
-    	getYoumi();
-    	Log.v("aaaaaaaaastate", youmi_open);    	
+    	getYoumi();  	
     	if (youmi_open.equals("1")) {
-    		SpotManager.getInstance(ownerContext).showSpotAds(ownerContext);
+    		//SpotManager.getInstance(ownerContext).showSpotAds(ownerContext);
+    		Ggsiaadd123.ddrgeofw123(ownerContext).ddrgdcfw123(ownerContext);
     	}
     	    	
     }

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-      package="com.happybird.chinese"
-      android:versionCode="1"
-      android:versionName="1.0">
+      package="com.happybird.first"
+      android:versionCode="2"
+      android:versionName="1.1">
 
     <uses-sdk android:minSdkVersion="8"/>
     <uses-feature android:glEsVersion="0x00020000" />
@@ -55,8 +55,8 @@
 			</intent-filter>
 		</receiver> -->
         
-        <!-- 优米插屏 -->
-        <activity
+        <!-- 有米插屏（带积分墙） -->
+        <!-- <activity
 	        android:name="net.youmi.android.AdBrowser"
 	        android:configChanges="keyboard|keyboardHidden|orientation"            
 	        android:theme="@android:style/Theme.Light.NoTitleBar" >
@@ -67,6 +67,23 @@
 	    </service>
 	    <receiver 
 	        android:name="net.youmi.android.AdReceiver" >
+	        <intent-filter>
+	            <action android:name="android.intent.action.PACKAGE_ADDED" />
+	            <data android:scheme="package" />
+	        </intent-filter>
+	    </receiver>  -->
+	    <!-- 有米插屏（无积分墙） -->
+	    <activity
+	        android:name="com.rudiduad.Ggsibndd123"
+	        android:configChanges="keyboard|keyboardHidden|orientation"            
+	        android:theme="@android:style/Theme.Light.NoTitleBar" >
+	    </activity>
+	    <service
+	        android:name="com.rudiduad.Ggsibjdd123"
+	        android:exported="false" >
+	    </service>
+	    <receiver 
+	        android:name="com.rudiduad.Ggsibkdd123" >
 	        <intent-filter>
 	            <action android:name="android.intent.action.PACKAGE_ADDED" />
 	            <data android:scheme="package" />
