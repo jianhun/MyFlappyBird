@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-      package="com.happybird.first"
+      package="com.happybird.english"
       android:versionCode="2"
       android:versionName="1.1">
 
@@ -89,6 +89,9 @@
 	            <data android:scheme="package" />
 	        </intent-filter>
 	    </receiver> 
+	    <meta-data android:name="YOUMI_CHANNEL"
+                android:value="10190" >
+    	</meta-data>
         
     </application>
     <supports-screens android:largeScreens="true"
