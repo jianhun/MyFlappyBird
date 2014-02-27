@@ -6,3 +6,4 @@ proj.android/assets
 proj.android/libs/armeabi
 proj.android/.project
 proj.android/.settings
+proj.ios/
