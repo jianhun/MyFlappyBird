@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-      package="com.happybird.english"
+      package="com.happybird.chinese"
       android:versionCode="2"
       android:versionName="1.1">
 
@@ -20,7 +20,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        
+       
         <!-- 飞沃banner -->
         <!-- <activity android:name="com.feiwoone.banner.WebViewActivity" 
              android:configChanges="keyboardHidden|orientation" />
