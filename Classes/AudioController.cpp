@@ -93,7 +93,7 @@ void AudioController::playSfx(const char *clip)
     _engine->playEffect(music.c_str());
 #elif (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
     string sfxName = "music/" + string(clip) + KExtension;
-    _engine->playEffect(sfxName.c_str());
+    _engine->playEffect(sfxName.c_str(), false);
 //    int soundID = _engine->playEffect(sfxName.c_str());
 //    if(soundID != 0) {
 //        _engine->resumeEffect(soundID);

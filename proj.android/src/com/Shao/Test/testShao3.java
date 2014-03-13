@@ -67,8 +67,8 @@ public class testShao3 extends Cocos2dxActivity{
 //	private String feiwo_appKey = "UiWpbaNQJdJ5yUAw15OqS16m";
 //	private AdBanner myAdView;
 	//有米
-	private static final String youmi_appid = "caa7346a9d972409";
-	private static final String youmi_appkey = "14d42ca9a75abb86";
+	private static final String youmi_appid = "c6917978ff4bcb8f";
+	private static final String youmi_appkey = "eb8dfeed49783952";
 	private static String youmi_open = "2";	//1.open 2.close
 	private static int youmi_checkHour = -1;
 	

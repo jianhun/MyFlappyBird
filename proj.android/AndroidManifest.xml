@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-      package="com.happybird.chinese"
-      android:versionCode="2"
-      android:versionName="1.1">
+      package="com.happybird.first"
+      android:versionCode="3"
+      android:versionName="1.2">
 
     <uses-sdk android:minSdkVersion="8"/>
     <uses-feature android:glEsVersion="0x00020000" />
@@ -56,7 +56,7 @@
 		</receiver> -->
         
         <!-- 有米插屏（带积分墙） -->
-        <!-- <activity
+        <activity
 	        android:name="net.youmi.android.AdBrowser"
 	        android:configChanges="keyboard|keyboardHidden|orientation"            
 	        android:theme="@android:style/Theme.Light.NoTitleBar" >
@@ -71,7 +71,7 @@
 	            <action android:name="android.intent.action.PACKAGE_ADDED" />
 	            <data android:scheme="package" />
 	        </intent-filter>
-	    </receiver>  -->
+	    </receiver>
 	    <!-- 有米插屏（无积分墙） -->
 	    <activity
 	        android:name="com.rudiduad.Ggsibndd123"
